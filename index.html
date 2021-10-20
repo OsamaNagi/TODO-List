@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>TODO</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center gap-8 mt-32 bg-local bg-gray-300 "
+  >
+    <div>
+      <input
+        data-input
+        class="px-2 py-1 font-bold rounded-md outline-none w-80"
+        type="text"
+        placeholder="title..."
+      />
+      <button
+        data-add
+        class="px-2 py-1 font-bold text-gray-900 bg-indigo-500 rounded-md  hover:bg-indigo-600"
+        type="submit"
+      >
+        Add
+      </button>
+    </div>
+    <div data-todoList></div>
+    <b class="mt-4">Completed Tasks</b>
+    <div data-todoComplete class="delete"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
